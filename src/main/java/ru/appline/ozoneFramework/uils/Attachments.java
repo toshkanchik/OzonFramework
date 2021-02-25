@@ -1,5 +1,6 @@
 package ru.appline.ozoneFramework.uils;
 
+import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 
 import java.util.List;
@@ -19,5 +20,9 @@ public class Attachments {
         }
         out = out + "The most expensive item:\n" + maxPriceName + "\nprice: " + maxPrice + "\n";
         return out;
+    }
+
+    public static void allureAddReport(List<Product> products){
+        Allure.addAttachment("report", addReport(products));
     }
 }

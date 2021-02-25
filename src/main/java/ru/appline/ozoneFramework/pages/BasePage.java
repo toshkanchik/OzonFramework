@@ -10,7 +10,7 @@ import ru.appline.ozoneFramework.managers.PageMngr;
 import java.util.concurrent.TimeUnit;
 
 import static ru.appline.ozoneFramework.managers.DriverMngr.getDriver;
-import static ru.appline.ozoneFramework.managers.PageMngr.getBasketPage;
+//import static ru.appline.ozoneFramework.managers.PageMngr.getBasketPage;
 import static ru.appline.ozoneFramework.managers.PropMngr.GetPropMngr;
 
 public class BasePage {
@@ -71,6 +71,6 @@ public class BasePage {
     public BasketPage goToBasket(){
         elementToBeClickable(MenuBasket);
         MenuBasket.click();
-        return getBasketPage().checkPageLoaded();
+        return pages.getBasketPage().checkPageLoaded();
     }
 }

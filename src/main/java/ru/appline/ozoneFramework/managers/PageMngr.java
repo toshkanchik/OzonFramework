@@ -27,7 +27,7 @@ public class PageMngr {
         //        pageMngr = null;
     }
 
-    public static BasketPage getBasketPage() {
+    public BasketPage getBasketPage() {
         if(basketPage == null) basketPage = new BasketPage();
         return basketPage;
     }
